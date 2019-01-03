@@ -1,0 +1,38 @@
+/* Put your css in here */
+
+.map-styles {
+    width:700px;
+    height:350px;
+    margin:0 auto;
+}
+
+.map-container {
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 10px 1px 17px 1px;
+    background: #fefefe;
+}
+
+h1 {
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.add-coord {
+    text-align: center;
+}
+
+.add-coord button {
+    height: 91px;
+}
+
+.form-group {
+    margin-bottom:23px;
+}
+
+.help-block {
+    display: none;
+    position: absolute;
+    top: 30px;    
+}

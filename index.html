@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCw38Xf31E9GPyz3md_6BkRnduOucJ8TNs&sensor=false"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Mapa com marcadores centralizados</h1>
+    <div class="container map-container">
+        <form id="mapCenterForm">
+                <div class="col-md-10">
+                    <div class="col-md-4 form-group">
+                        <!-- <label class="control-label" for="rs">Razão social:</label> -->
+                        <input type="text" class="form-control" id="rs" placeholder="Razão Social" name="rs">
+                        <span class="help-block">Campo obrigatório</span>
+                        
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <!-- <label class="control-label" for="lat">Latitude:</label> -->
+                        <input type="number" step='0.01' class="form-control" id="lat" placeholder="Latitude" name="lat">
+                        <span class="help-block">Campo obrigatório</span>
+                        
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <!-- <label class="control-label" for="lng">Longitude:</label> -->
+                        <input type="number" step='0.01' class="form-control" id="lng" placeholder="Longitude" name="lng">
+                        <span class="help-block">Campo obrigatório</span>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <!-- <label class="control-label" for="rs">Trabalho:</label> -->
+                        <input type="text" class="form-control" id="trab" placeholder="Trabalho" name="trab">
+                        <span class="help-block">Campo obrigatório</span>
+                        
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <!-- <label class="control-label" for="lat">Latitude:</label> -->
+                        <input type="number" step='0.01' class="form-control" id="lat2" placeholder="Latitude" name="lat2">
+                        <span class="help-block">Campo obrigatório</span>
+                        
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <!-- <label class="control-label" for="lng">Longitude:</label> -->
+                        <input type="number" step='0.01' class="form-control" id="lng2" placeholder="Longitude" name="lng2">
+                        <span class="help-block">Campo obrigatório</span>
+                    </div>                             
+                </div>
+
+                    
+    
+                <div class="col-md-2 add-coord">
+                    <button id="addMarker" type="button" value="adicionar coordenada" class="btn btn-default ">Adicionar coordenada</button>
+                    <span class="help-block">Campo obrigatório</span>
+                    <!-- <button id="reloadMarkers" type="button" value="Reload markers" class="btn btn-default">Recarregar</button>                -->
+                </div>                
+                    
+          </form>
+
+          <div id="google-map" class="map-styles"></div>
+
+
+    </div>
+
+
+
+  </body>
+
+</html>
